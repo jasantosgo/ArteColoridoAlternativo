@@ -2,17 +2,159 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:onClick="colorear"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
 
     <TextView
+        android:id="@+id/tvCaja1"
+        style="@style/CajaBlanca"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ancho_margen"
+        android:layout_marginTop="@dimen/ancho_margen"
+        android:layout_marginEnd="@dimen/ancho_margen"
+        android:onClick="colorear"
+        android:text="@string/caja_uno"
+        android:textSize="@dimen/texto_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCaja2"
+        style="@style/CajaBlanca"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="colorear"
+        android:text="@string/caja_dos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCaja1" />
+
+    <TextView
+        android:id="@+id/tvCaja3"
+        style="@style/CajaBlanca"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ancho_margen"
+        android:layout_marginEnd="@dimen/ancho_margen"
+        android:onClick="colorear"
+        android:text="@string/caja_tres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvCaja2"
+        app:layout_constraintTop_toTopOf="@+id/tvCaja2" />
+
+    <TextView
+        android:id="@+id/tvCaja4"
+        style="@style/CajaBlanca"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ancho_margen"
+        android:layout_marginTop="@dimen/ancho_margen"
+        android:layout_marginEnd="@dimen/ancho_margen"
+        android:layout_marginBottom="@dimen/ancho_margen"
+        android:onClick="colorear"
+        android:text="@string/caja_cuatro"
+        app:layout_constraintBottom_toTopOf="@+id/tvCaja5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvCaja2"
+        app:layout_constraintTop_toBottomOf="@+id/tvCaja3" />
+
+    <TextView
+        android:id="@+id/tvCaja5"
+        style="@style/CajaBlanca"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ancho_margen"
+        android:layout_marginEnd="@dimen/ancho_margen"
+        android:onClick="colorear"
+        android:text="@string/caja_cinco"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCaja2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvCaja2"
+        app:layout_constraintTop_toBottomOf="@+id/tvCaja4" />
+
+    <TextView
+        android:id="@+id/tvComoJugar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="@dimen/ancho_margen"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/como_jugar"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCaja2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvExplicacion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/explicacion"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvComoJugar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvComoJugar" />
+
+    <Button
+        android:id="@+id/btnRojo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ancho_margen"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="@dimen/ancho_margen"
+        android:onClick="colorear"
+        android:text="@string/rojo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnAmarillo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvComoJugar"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnAmarillo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ancho_margen"
+        android:layout_marginEnd="@dimen/ancho_margen"
+        android:onClick="colorear"
+        android:text="@string/amarillo"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnRojo"
+        app:layout_constraintEnd_toStartOf="@+id/btnVerde"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@+id/btnRojo" />
+
+    <Button
+        android:id="@+id/btnVerde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ancho_margen"
+        android:onClick="colorear"
+        android:text="@string/verde"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnAmarillo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@+id/btnAmarillo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

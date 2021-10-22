@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">ArteColorido</string>
+    <string name="caja_uno">Caja Uno</string>
+    <string name="caja_dos">Caja Dos</string>
+    <string name="caja_tres">Caja Tres</string>
+    <string name="caja_cuatro">Caja Cuatro</string>
+    <string name="caja_cinco">Caja Cinco</string>
+    <string name="como_jugar">Como jugar:</string>
+    <string name="explicacion">Pulsa en la pantalla y en los botones.</string>
+    <string name="rojo">ROJO</string>
+    <string name="amarillo">AMARILLO</string>
+    <string name="verde">VERDE</string>
 </resources>
