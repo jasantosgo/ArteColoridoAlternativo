@@ -1,2 +1,2 @@
-# ArteColorido
- Ejemplo de app con ConstraintLayout
+# ArteColoridoAlternativo
+ Aplicación con botones y personalización.
