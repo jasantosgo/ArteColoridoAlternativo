@@ -9,4 +9,18 @@
         <item name="android:fontFamily">@font/roboto</item>
         <item name="android:padding">2dp</item>
     </style>
+    <style name="BotonCuadrado" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">0dp</item>
+        <item name="android:minWidth">60dp</item>
+        <item name="android:minHeight">60dp</item>
+    </style>
+    <style name="BotonRojo" parent="@style/BotonCuadrado">
+        <item name="backgroundTint">@color/mi_rojo</item>
+    </style>
+    <style name="BotonAzul" parent="@style/BotonCuadrado">
+        <item name="backgroundTint">@color/mi_azul</item>
+    </style>
+    <style name="BotonVerde" parent="@style/BotonCuadrado">
+        <item name="backgroundTint">@color/mi_verde</item>
+    </style>
 </resources>

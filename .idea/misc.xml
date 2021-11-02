@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidStudio/ArteColorido/app/src/main/res/layout/activity_main.xml" value="0.75" />
+        <entry key="..\:/AndroidStudio/ArteColoridoAlternativo/app/src/main/res/layout-land/activity_main.xml" value="0.33" />
+        <entry key="..\:/AndroidStudio/ArteColoridoAlternativo/app/src/main/res/layout/activity_main.xml" value="0.33" />
       </map>
     </option>
   </component>

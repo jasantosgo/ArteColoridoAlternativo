@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="colorear"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvCaja7"
+        style="@style/CajaBlanca"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ancho_margen"
+        android:layout_marginEnd="@dimen/ancho_margen"
+        android:onClick="colorear"
+        android:text="@string/caja_siete"
+        app:layout_constraintBottom_toTopOf="@+id/tvCaja8"
+        app:layout_constraintEnd_toStartOf="@+id/tvCaja6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvCaja1"
+        app:layout_constraintTop_toTopOf="@+id/tvCaja6"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <TextView
+        android:id="@+id/tvCaja8"
+        style="@style/CajaBlanca"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ancho_margen"
+        android:layout_marginEnd="@dimen/ancho_margen"
+        android:onClick="colorear"
+        android:text="@string/caja_ocho"
+        app:layout_constraintBottom_toTopOf="@+id/tvCaja9"
+        app:layout_constraintEnd_toStartOf="@+id/tvCaja6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvCaja1"
+        app:layout_constraintTop_toBottomOf="@+id/tvCaja7" />
+
+    <TextView
+        android:id="@+id/tvCaja9"
+        style="@style/CajaBlanca"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ancho_margen"
+        android:layout_marginEnd="@dimen/ancho_margen"
+        android:onClick="colorear"
+        android:text="@string/caja_nueve"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCaja6"
+        app:layout_constraintEnd_toStartOf="@+id/tvCaja6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvCaja1"
+        app:layout_constraintTop_toBottomOf="@+id/tvCaja8" />
+
+    <TextView
+        android:id="@+id/tvCaja1"
+        style="@style/CajaBlanca"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/ancho_margen"
+        android:layout_marginTop="@dimen/ancho_margen"
+        android:onClick="colorear"
+        android:text="@string/caja_uno"
+        android:textSize="@dimen/texto_size"
+        app:layout_constraintBottom_toTopOf="@+id/tvComoJugar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCaja10"
+        style="@style/CajaBlanca"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/ancho_margen"
+        android:layout_marginTop="@dimen/ancho_margen"
+        android:onClick="colorear"
+        android:text="@string/caja_diez"
+        android:textSize="@dimen/texto_size"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCaja6"
+        app:layout_constraintStart_toEndOf="@+id/tvCaja6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvComoJugar"
+        style="@style/Widget.AppCompat.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ancho_margen"
+        android:layout_marginBottom="@dimen/ancho_margen"
+        android:fontFamily="@font/roboto"
+        android:text="@string/como_jugar"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCaja6" />
+
+    <TextView
+        android:id="@+id/tvCaja2"
+        style="@style/CajaBlanca"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/ancho_margen"
+        android:layout_marginTop="@dimen/ancho_margen"
+        android:onClick="colorear"
+        android:text="@string/caja_dos"
+        app:layout_constraintBottom_toTopOf="@+id/tvCaja6"
+        app:layout_constraintStart_toEndOf="@+id/tvCaja1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <TextView
+        android:id="@+id/tvCaja6"
+        style="@style/CajaBlanca"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/ancho_margen"
+        android:layout_marginTop="@dimen/ancho_margen"
+        android:onClick="colorear"
+        android:text="@string/caja_seis"
+        app:layout_constraintBottom_toTopOf="@+id/tvComoJugar"
+        app:layout_constraintStart_toEndOf="@+id/tvCaja2"
+        app:layout_constraintTop_toBottomOf="@+id/tvCaja2" />
+
+    <TextView
+        android:id="@+id/tvCaja3"
+        style="@style/CajaBlanca"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ancho_margen"
+        android:layout_marginEnd="@dimen/ancho_margen"
+        android:onClick="colorear"
+        android:text="@string/caja_tres"
+        app:layout_constraintBottom_toTopOf="@+id/tvCaja4"
+        app:layout_constraintEnd_toStartOf="@+id/tvCaja10"
+        app:layout_constraintStart_toEndOf="@+id/tvCaja2"
+        app:layout_constraintTop_toTopOf="@+id/tvCaja2"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <TextView
+        android:id="@+id/tvCaja5"
+        style="@style/CajaBlanca"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ancho_margen"
+        android:layout_marginEnd="@dimen/ancho_margen"
+        android:onClick="colorear"
+        android:text="@string/caja_cinco"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCaja2"
+        app:layout_constraintEnd_toStartOf="@+id/tvCaja10"
+        app:layout_constraintStart_toEndOf="@+id/tvCaja2"
+        app:layout_constraintTop_toBottomOf="@+id/tvCaja4" />
+
+    <TextView
+        android:id="@+id/tvCaja4"
+        style="@style/CajaBlanca"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ancho_margen"
+        android:layout_marginEnd="@dimen/ancho_margen"
+        android:onClick="colorear"
+        android:text="@string/caja_cuatro"
+        app:layout_constraintBottom_toTopOf="@+id/tvCaja5"
+        app:layout_constraintEnd_toStartOf="@+id/tvCaja10"
+        app:layout_constraintStart_toEndOf="@+id/tvCaja2"
+        app:layout_constraintTop_toBottomOf="@+id/tvCaja3" />
+
+    <TextView
+        android:id="@+id/tvExplicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ancho_margen"
+        android:fontFamily="@font/roboto"
+        android:text="@string/explicacion"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvComoJugar"
+        app:layout_constraintStart_toEndOf="@+id/tvComoJugar" />
+
+    <Button
+        android:id="@+id/btnAzul"
+        style="@style/BotonAzul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ancho_margen"
+        android:layout_marginEnd="@dimen/ancho_margen"
+        app:layout_constraintBottom_toTopOf="@+id/btnAleatorio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvCaja10"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerde" />
+
+    <Button
+        android:id="@+id/btnRojo"
+        style="@style/BotonRojo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ancho_margen"
+        android:layout_marginEnd="@dimen/ancho_margen"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintBottom_toTopOf="@+id/btnVerde"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvCaja10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/btnVerde"
+        style="@style/BotonVerde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ancho_margen"
+        android:layout_marginEnd="@dimen/ancho_margen"
+        app:layout_constraintBottom_toTopOf="@+id/btnAzul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvCaja10"
+        app:layout_constraintTop_toBottomOf="@+id/btnRojo" />
+
+    <Button
+        android:id="@+id/btnAleatorio"
+        style="@style/BotonCuadrado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ancho_margen"
+        android:layout_marginEnd="@dimen/ancho_margen"
+        android:layout_marginBottom="@dimen/ancho_margen"
+        android:backgroundTint="#AAA5A5"
+        app:icon="@android:drawable/ic_menu_help"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvSeleccionado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvCaja10"
+        app:layout_constraintTop_toBottomOf="@+id/btnAzul" />
+
+    <TextView
+        android:id="@+id/tvMuestra"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="@dimen/ancho_margen"
+        android:layout_marginEnd="@dimen/ancho_margen"
+        android:layout_marginBottom="@dimen/ancho_margen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvCaja10"
+        app:layout_constraintTop_toBottomOf="@+id/tvSeleccionado" />
+
+    <TextView
+        android:id="@+id/tvSeleccionado"
+        android:layout_width="86dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="@dimen/ancho_margen"
+        android:layout_marginEnd="@dimen/ancho_margen"
+        android:text="Seleccionado:"
+        app:layout_constraintBottom_toTopOf="@+id/tvMuestra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvCaja10"
+        app:layout_constraintTop_toBottomOf="@+id/btnAleatorio" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

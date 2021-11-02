@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:onClick="colorear"
     tools:context=".MainActivity">
-
+    
     <TextView
         android:id="@+id/tvCaja6"
         style="@style/CajaBlanca"
@@ -156,29 +156,98 @@
 
     <TextView
         android:id="@+id/tvComoJugar"
+        style="@style/Widget.AppCompat.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
         android:fontFamily="@font/roboto"
         android:text="@string/como_jugar"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnVerde"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvCaja10"
         app:layout_constraintVertical_bias="0.9" />
 
     <TextView
         android:id="@+id/tvExplicacion"
-        android:layout_width="234dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:fontFamily="@font/roboto"
         android:text="@string/explicacion"
         app:layout_constraintBaseline_toBaselineOf="@+id/tvComoJugar"
         app:layout_constraintStart_toEndOf="@+id/tvComoJugar" />
+
+    <Button
+        android:id="@+id/btnAzul"
+        style="@style/BotonAzul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ancho_margen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnAleatorio"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnVerde" />
+
+    <Button
+        android:id="@+id/btnRojo"
+        style="@style/BotonRojo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ancho_margen"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnVerde"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnVerde"
+        style="@style/BotonVerde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ancho_margen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnAzul"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnRojo" />
+
+    <Button
+        android:id="@+id/btnAleatorio"
+        style="@style/BotonCuadrado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ancho_margen"
+        android:backgroundTint="#AAA5A5"
+        app:icon="@android:drawable/ic_menu_help"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvMuestra"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnAzul" />
+
+    <TextView
+        android:id="@+id/tvMuestra"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="@dimen/ancho_margen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnAleatorio"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvSeleccionado"
+        android:layout_width="86dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="@dimen/ancho_margen"
+        android:text="Seleccionado:"
+        app:layout_constraintStart_toEndOf="@+id/btnAleatorio"
+        app:layout_constraintTop_toTopOf="@+id/btnAleatorio" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
