@@ -245,7 +245,7 @@
         android:layout_width="86dp"
         android:layout_height="17dp"
         android:layout_marginStart="@dimen/ancho_margen"
-        android:text="Seleccionado:"
+        android:text="@string/seleccionado"
         app:layout_constraintStart_toEndOf="@+id/btnAleatorio"
         app:layout_constraintTop_toTopOf="@+id/btnAleatorio" />
 

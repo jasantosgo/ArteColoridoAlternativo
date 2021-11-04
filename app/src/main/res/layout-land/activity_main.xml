@@ -251,7 +251,7 @@
         android:layout_height="17dp"
         android:layout_marginStart="@dimen/ancho_margen"
         android:layout_marginEnd="@dimen/ancho_margen"
-        android:text="Seleccionado:"
+        android:text="@string/seleccionado"
         app:layout_constraintBottom_toTopOf="@+id/tvMuestra"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tvCaja10"

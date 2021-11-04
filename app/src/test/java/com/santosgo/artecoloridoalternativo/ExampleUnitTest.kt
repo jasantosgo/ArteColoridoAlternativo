@@ -1,4 +1,4 @@
-package com.santosgo.artecolorido
+package com.santosgo.artecoloridoalternativo
 
 import org.junit.Test
 
